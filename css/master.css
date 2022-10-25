@@ -56,18 +56,19 @@
 }
 
 /* Start Deleted class */
-.deleted-task {
-  border-bottom: none;
+.done {
   opacity: 0.3;
 }
 
-.deleted-text
-{
-text-decoration: line-through;
+.done h3,
+.done p {
+  text-decoration: line-through;
 }
-.cursor-nodrop {
+
+.done .recyle-icon {
   cursor: no-drop;
 }
+
 
 /* End Deleted class */
 
@@ -530,6 +531,13 @@ main {
   border-bottom: 1px solid #eee;
 }
 
+.latest-tasks .task .recyle-icon {
+  transition: var(--main-transition);
+}
+
+.latest-tasks .task:not(.done) .recyle-icon:hover {
+  color: var(--red-color);
+}
 
 
 /* End Latest-tasks */
