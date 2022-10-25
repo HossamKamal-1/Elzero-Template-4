@@ -129,6 +129,7 @@ aside {
 @media (min-width: 768px) {
   aside {
     width: 250px;
+    padding: 20px !important;
   }
 
   aside>h3::before,
@@ -178,6 +179,7 @@ aside ul li a.active {
 @media (min-width: 768px) {
   aside ul li a {
     gap: 10px;
+    padding: 10px !important;
   }
 
 }
@@ -248,15 +250,12 @@ main {
   margin-left: 15px;
 }
 
-/* Welcome section */
+/* Start Welcome section */
 .welcome {
   overflow: hidden;
-
 }
 
-.welcome .head {}
-
-.welcome .head + img {
+.welcome .head+img {
   width: 64px;
   height: 64px;
   border: 2px solid var(--aside-color);
@@ -264,22 +263,21 @@ main {
   margin-left: 28px;
   margin-top: -32px;
 }
+
 @media (max-width: 767px) {
-  .welcome .head + img {
+  .welcome .head+img {
     margin-left: 0;
   }
-  
+
 }
-.welcome .head .text {}
+
+
 @media (max-width: 767px) {
   .welcome .head .text {
     padding-bottom: 50px;
   }
-  
-}
-.welcome .head .text h2 {}
 
-.welcome .head .text span {}
+}
 
 .welcome .head img {
   width: 170px;
@@ -302,7 +300,6 @@ main {
 @media (max-width: 767px) {
   .welcome .body>div:not(:last-child) {
     margin-bottom: 10px;
-
   }
 }
 
@@ -312,17 +309,9 @@ main {
 }
 
 .welcome .visit {
-  display: block;
-  width: fit-content;
-  margin: 20px 12px 100px auto;
-  color: white;
-  background-color: var(--blue-color);
-  transition: 0.3s;
+  margin: 20px 10px 20px auto;
 }
 
-.welcome .visit:hover {
-  background-color: var(--blue-alt-color);
-}
 
 @media (max-width: 767px) {
   .welcome .visit {
@@ -331,6 +320,97 @@ main {
 
 }
 
+/* End Welcome section */
+/* Start Quick-draft section */
+.quick-draft form textarea {
+  min-height: 180px;
+}
 
-/* Welcome section */
+.quick-draft form input[type="submit"] {
+  margin-left: auto;
+}
+
+
+
+/* End Quick-draft section */
+/* Start Yearly Target */
+.details .target-row .icon {
+  width: 80px;
+  height: 80px;
+}
+
+.details .target-row .icon.blue,
+.details .progress.blue  {
+  background-color: rgb(0 117 255 / 20%);
+}
+
+.details .target-row .icon.orange,
+.details .progress.orange {
+
+  background-color: rgb(245 158 11 / 20%);
+}
+
+.details .target-row .icon.green,
+.details .progress.green {
+
+  background-color: rgb(34 197 94 / 20%);
+}
+
+.details .target-row .icon .blue
+{
+  color: var(--blue-color);
+}
+
+.details .target-row .icon .orange {
+  color: var(--orange-color);
+}
+
+.details .target-row .icon i.green {
+  color: var(--green-color);
+}
+.details .progress {
+  height: 3px;
+}
+.details .progress > span {
+  height: 100%;
+}
+.details .progress .blue {
+  background-color: var(--blue-color);
+}
+.details .progress .orange {
+  background-color: var(--orange-color);
+}
+.details .progress .green {
+  background-color: var(--green-color);
+}
+.details .progress > span > span {
+  right: 0;
+  bottom: 18px;
+  transform: translateX(50%);
+  border-radius: 4px;
+  font-size: 13px;
+  color: white;
+  padding: 3px 5px;
+}
+.details .progress > span > span::before {
+  content: "";
+  position: absolute;
+  right: 2px;
+  top: 20px;
+  transform: translateX(-50%);
+  border-color: transparent;
+  border-style: solid;
+  border-width: 8px;
+}
+.details .progress > span > span.blue::before {
+  border-top-color: var(--blue-color);
+}
+.details .progress > span > span.orange::before {
+  border-top-color: var(--orange-color);
+}
+.details .progress > span > span.green::before {
+  border-top-color: var(--green-color);
+}
+
+/* End Yearly Target */
 /* End main content */

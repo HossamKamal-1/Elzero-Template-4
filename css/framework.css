@@ -4,7 +4,7 @@
   --blue-alt-color: #0d69d5;
   --orange-color: #f59e0b;
   --green-color: #22c55e;
-  --red-color:#f44336;
+  --red-color: #f44336;
   --aside-color: white;
   --page-color: #f1f5f9;
   --gray-color: #888;
@@ -25,9 +25,11 @@
 .justify-center {
   justify-content: center;
 }
+
 .justify-between {
   justify-content: space-between;
 }
+
 .d-block {
   display: block;
 }
@@ -35,6 +37,16 @@
 @media (max-width: 767px) {
   .d-block-mobile {
     display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none;
+  }
+
+  .column-mobile {
+    flex-direction: column;
   }
 }
 
@@ -67,7 +79,9 @@
 .p-5 {
   padding: 5px;
 }
-
+.p-8 {
+  padding: 8px
+}
 .p-10 {
   padding: 10px;
 }
@@ -79,15 +93,23 @@
 .p-20 {
   padding: 20px;
 }
+
 .pt-10 {
   padding-top: 10px;
 }
-.pt-20{
+
+.pt-20 {
   padding-top: 20px;
 }
+
 .pb-20 {
   padding-bottom: 20px;
 }
+
+.pl-5 {
+  padding-left: 5px;
+}
+
 .pl-10 {
   padding-left: 10px;
 }
@@ -109,7 +131,9 @@
 .mt-0 {
   margin-top: 0;
 }
-
+.mt-10 {
+  margin-top: 10px;
+}
 .mt-15 {
   margin-top: 15px;
 }
@@ -129,8 +153,19 @@
 .mb-0 {
   margin-bottom: 0;
 }
+
 .mb-5 {
   margin-bottom: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mb-20 {
+  margin-bottom: 20px;
 }
 
 .ml-5 {
@@ -145,8 +180,13 @@
 }
 
 .bg-red {
-  background-color: red;
+  background-color: var(--red-color);
 }
+
+.bg-blue {
+  background-color: var(--blue-color);
+}
+
 .bg-eee {
   background-color: var(--eee-color);
 }
@@ -154,9 +194,15 @@
 .c-black {
   color: black;
 }
+
+.c-white {
+  color: var(--aside-color)
+}
+
 .c-gray {
   color: var(--gray-color)
 }
+
 /* End Color */
 /* Start Position */
 .p-relative {
@@ -187,9 +233,20 @@
 .fs-14 {
   font-size: 14px;
 }
-
+.fs-18 {
+  font-size: 18px;
+}
+.fw-b {
+  font-weight: bold;
+}
 
 /* End Font */
+/* Start Width + Height */
+.w-fit {
+  width: fit-content;
+}
+
+/* End Width + Height */
 /* Start Border */
 .rad-6 {
   border-radius: 6px;
@@ -199,17 +256,13 @@
   border-radius: 50%;
 }
 
+.b-none {
+  border: none;
+}
+
 /* End Border */
 /* Start Media */
-@media (max-width: 767px) {
-  .hide-mobile {
-    display: none;
-  }
 
-  .column-mobile {
-    flex-direction: column;
-  }
-}
 
 /* End Media */
 
@@ -226,4 +279,19 @@
   justify-content: center;
 }
 
+.btn-shape {
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: white;
+}
+.caret-color-blue:focus {
+  caret-color: var(--blue-color);
+}
+.c-pointer {
+  cursor: pointer;
+}
+.trans-hov-fx:hover {
+  transition: 0.3s;
+  background-color: var(--blue-alt-color);
+}
 /* End Components */

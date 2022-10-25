@@ -23,11 +23,11 @@
 
 <body>
   <div class="page d-flex">
-    <aside class="p-relative p-20">
+    <aside class="p-relative p-10">
       <h3 class="p-relative txt-c">Elzero</h3>
       <ul>
         <li>
-          <a href="index.html" class="active d-flex align-center rad-6 c-black p-10 fs-14">
+          <a href="index.html" class="active d-flex align-center rad-6 c-black p-8 fs-14">
             <i class="fa-solid fa-square-poll-vertical fa-fw"></i>
             <span class="hide-mobile">
               Dashboard
@@ -35,7 +35,7 @@
           </a>
         </li>
         <li>
-          <a href="pages/settings.html" class="d-flex align-center rad-6 c-black p-10 fs-14">
+          <a href="pages/settings.html" class="d-flex align-center rad-6 c-black p-8 fs-14">
             <i class="fa-solid fa-gear fa-fw"></i>
             <span class="hide-mobile">
               Settings
@@ -43,7 +43,7 @@
           </a>
         </li>
         <li>
-          <a href="pages/profile.html" class="d-flex align-center rad-6 c-black p-10 fs-14">
+          <a href="pages/profile.html" class="d-flex align-center rad-6 c-black p-8 fs-14">
             <i class="fa-solid fa-user fa-fw"></i>
             <span class="hide-mobile">
               Profile
@@ -51,31 +51,31 @@
           </a>
         </li>
         <li>
-          <a href="pages/projects.html" class="d-flex align-center rad-6 c-black p-10 fs-14">
+          <a href="pages/projects.html" class="d-flex align-center rad-6 c-black p-8 fs-14">
             <i class="fa-solid fa-diagram-project fa-fw"></i>
             <span class="hide-mobile">Projects</span>
           </a>
         </li>
         <li>
-          <a href="pages/courses.html" class="d-flex align-center rad-6 c-black p-10 fs-14">
+          <a href="pages/courses.html" class="d-flex align-center rad-6 c-black p-8 fs-14">
             <i class="fa-solid fa-graduation-cap fa-fw"></i>
             <span class="hide-mobile">Courses</span>
           </a>
         </li>
         <li>
-          <a href="pages/friends.html" class="d-flex align-center rad-6 c-black p-10 fs-14">
+          <a href="pages/friends.html" class="d-flex align-center rad-6 c-black p-8 fs-14">
             <i class="fa-solid fa-user-group fa-fw"></i>
             <span class="hide-mobile">Friends</span>
           </a>
         </li>
         <li>
-          <a href="pages/files.html" class="d-flex align-center rad-6 c-black p-10 fs-14">
+          <a href="pages/files.html" class="d-flex align-center rad-6 c-black p-8 fs-14">
             <i class="fa-solid fa-file fa-fw"></i>
             <span class="hide-mobile">Files</span>
           </a>
         </li>
         <li>
-          <a href="pages/plans.html" class="d-flex align-center rad-6 c-black p-10 fs-14">
+          <a href="pages/plans.html" class="d-flex align-center rad-6 c-black p-8 fs-14">
             <i class="fa-solid fa-calendar-check fa-fw"></i>
             <span class="hide-mobile">Plans</span>
           </a>
@@ -85,11 +85,11 @@
     <main class="grow-1">
       <div class="top-bar p-10 between-flex">
         <div class="search p-relative ml-5">
-          <input type="search" name="" id="" class="p-5 rad-6" placeholder="Type A Keyword" />
+          <input type="search" name="" id="" class="p-5 rad-6 caret-color-blue" placeholder="Type A Keyword" />
         </div>
         <div class="icons d-flex align-center">
           <span class="notifications p-relative">
-            <i class="fa-regular fa-bell fa-large"></i>
+            <i class="fa-regular fa-bell fa-lg"></i>
           </span>
           <img src="images/avatar.png" alt="" class="rad-circle" />
         </div>
@@ -99,11 +99,11 @@
         <div class="main-wrapper mt-30 d-grid">
           <div class="welcome bg-white rad-6 txt-c-mobile">
             <div class="head bg-eee d-flex justify-between   ">
-                <div class="text p-10">
-                  <h2 class="mb-5">Welcome</h2>
-                  <span class="c-gray">Elzero</span>
-                </div>
-                <img src="images/welcome.png" alt="" class="hide-mobile" />
+              <div class="text p-10">
+                <h2 class="mb-5">Welcome</h2>
+                <span class="c-gray">Elzero</span>
+              </div>
+              <img src="images/welcome.png" alt="" class="hide-mobile" />
             </div>
             <img src="images/avatar.png" alt="" class="rad-circle" />
             <div class="body pt-20 pb-20 d-flex align-center d-block-mobile">
@@ -120,9 +120,73 @@
                 <span class="c-gray">Earned</span>
               </div>
             </div>
-            <a href="pages/profile.html" class="visit rad-6">Profile</a>
+            <a href="pages/profile.html"
+              class="visit rad-6 bg-blue btn-shape trans-hov-fx w-fit d-block">Profile</a>
           </div>
-          
+          <div class="quick-draft bg-white p-10 rad-6">
+            <div class="mb-20">
+              <h2 class="mb-5">Quick Draft</h2>
+              <span class="c-gray">Write A Draft</span>
+            </div>
+            <form>
+              <input type="text" placeholder="Title"
+                class="d-block w-full b-none mb-20 p-10 bg-eee rad-6 caret-color-blue" />
+              <textarea class="d-block w-full b-none mb-20 p-10 bg-eee rad-6 caret-color-blue"
+                placeholder="Your Thought"></textarea>
+              <input type="submit" value="Save"
+                class="bg-blue btn-shape d-block w-fit b-none c-pointer trans-hov-fx mb-10" />
+            </form>
+          </div>
+          <div class="yearly-targets p-10 rad-6 bg-white">
+            <div class="mb-20">
+              <h2 class="mb-5">Yearly Target</h2>
+              <span class="c-gray">Targets Of The Year</span>
+            </div>
+            <div class="details">
+              <div class="target-row center-flex gap-10 mb-10">
+                <div class="icon center-flex blue">
+                  <i class="fa-solid fa-dollar fa-lg blue"></i>
+                </div>
+                <div class="grow-1">
+                  <span class="d-block c-gray mb-5">Money</span>
+                  <span class="d-block fs-18 fw-b mb-15">$20.000</span>
+                  <div class="progress blue">
+                    <span style="width:80%" class="d-block blue p-relative">
+                      <span class="blue p-absolute">80%</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="target-row center-flex gap-10 mb-10">
+                <div class="icon center-flex orange">
+                  <i class="fa-solid fa-code fa-lg orange"></i>
+                </div>
+                <div class="grow-1">
+                  <span class="d-block c-gray mb-5">Projects</span>
+                  <span class="d-block fs-18 fw-b mb-15">24</span>
+                  <div class="progress orange">
+                    <span style="width:45%" class="d-block orange p-relative">
+                      <span class="orange p-absolute">45%</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="target-row center-flex gap-10 mb-10">
+                <div class="icon center-flex green">
+                  <i class="fa-solid fa-user fa-lg green"></i>
+                </div>
+                <div class="grow-1">
+                  <span class="d-block c-gray mb-5">Team</span>
+                  <span class="d-block fs-18 fw-b mb-15">12</span>
+                  <div class="progress green">
+                    <span style="width:60%" class="d-block green p-relative">
+                      <span class="green p-absolute">60%</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
