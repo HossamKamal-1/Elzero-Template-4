@@ -55,22 +55,8 @@
 
 }
 
-/* Start Deleted class */
-.done {
-  opacity: 0.3;
-}
-
-.done h3,
-.done p {
-  text-decoration: line-through;
-}
-
-.done .recyle-icon {
-  cursor: no-drop;
-}
 
 
-/* End Deleted class */
 
 /* End Components */
 /* Start Global Rules */
@@ -539,5 +525,224 @@ main {
   color: var(--red-color);
 }
 
+.latest-tasks .task.done {
+  opacity: 0.3;
+}
+
+.latest-tasks .task.done h3,
+.latest-tasks .task.done p {
+  text-decoration: line-through;
+}
+
+.latest-tasks .task.done .recyle-icon {
+  cursor: no-drop;
+}
+
 
 /* End Latest-tasks */
+/* Start Latest Uploads */
+.latest-uploads .file .file-desc img {
+  width: 45px;
+}
+
+.latest-uploads .file:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+/* End Latest Uploads */
+/* Start Last Project Progress */
+.last-project-progress img {
+  width: 100px;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+}
+
+.last-project-progress .last-project-list::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: var(--blue-color);
+  left: 11px;
+}
+
+.last-project-progress .last-project-list li {
+  gap: 15px;
+}
+
+.last-project-progress .last-project-list li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid white;
+  outline: 2px solid var(--blue-color);
+  z-index: 1;
+}
+
+.last-project-progress .last-project-list li.done::before {
+  background-color: var(--blue-color);
+
+}
+
+.last-project-progress .last-project-list li.current::before {
+  animation: change-color 0.5s infinite alternate cubic-bezier(0.65, 0.05, 0.36, 1);
+
+}
+
+@keyframes change-color {
+  from {
+    background-color: var(--blue-color);
+  }
+
+  to {
+    background-color: white;
+  }
+}
+
+/* End Last Project Progress */
+/* Start Reminders */
+.reminders .reminders-list li>span {
+  width: 15px;
+  height: 15px;
+}
+
+.reminders .reminders-list li .reminder-desc::before {
+  content: "";
+  position: absolute;
+  width: 2.5px;
+  height: 100%;
+  left: 0;
+}
+
+.reminders .reminders-list li>span.blue,
+.reminders .reminders-list li .reminder-desc.blue::before {
+  background-color: var(--blue-color);
+}
+
+.reminders .reminders-list li>span.green,
+.reminders .reminders-list li .reminder-desc.green::before {
+  background-color: var(--green-color);
+}
+
+.reminders .reminders-list li>span.orange,
+.reminders .reminders-list li .reminder-desc.orange::before {
+  background-color: var(--orange-color);
+}
+
+.reminders .reminders-list li>span.red,
+.reminders .reminders-list li .reminder-desc.red::before {
+  background-color: var(--red-color);
+}
+
+/* End Reminders */
+/* Start Latest Post */
+.latest-post .post-head .avatar {
+  width: 50px;
+}
+
+.latest-post p {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  line-height: 1.7;
+  min-height: 130px;
+}
+
+/* End Latest Post */
+/* Start Social Media stats */
+.social-media-stats {}
+
+.social-media-stats .social-box {
+  padding-right: 17px;
+}
+
+@media (max-width: 767px) {
+  .social-media-stats .social-box {
+    padding-right: 10px;
+  }
+
+  .social-media-stats .social-box .social-icon {
+    margin-right: 8px;
+  }
+
+}
+
+.social-media-stats .social-box.twitter {
+  color: #1da1f2;
+  background-color: rgb(29 161 242 / 20%);
+}
+
+.social-media-stats .social-box.facebook {
+  color: #1877f2;
+  background-color: rgb(24 119 242 / 20%);
+}
+
+.social-media-stats .social-box.youtube {
+  color: #ff0000;
+  background-color: rgb(255 0 0 / 20%);
+}
+
+.social-media-stats .social-box.linkedin {
+  color: #0077b5;
+  background-color: rgb(0 119 181 / 20%);
+}
+
+.social-media-stats .social-box .social-icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  transition: var(--main-transition);
+}
+
+.social-media-stats .social-box .social-icon:hover {
+  transform: rotate(5deg);
+}
+
+.social-media-stats .social-box .link {
+  transition: var(--main-transition);
+}
+
+.social-media-stats .social-box.twitter .twitter-icon,
+.social-media-stats .social-box.twitter .link {
+  background-color: #1da1f2;
+}
+
+.social-media-stats .social-box.twitter .link:hover {
+  background-color: #1da0f2c4;
+}
+
+.social-media-stats .social-box.facebook .facebook-icon,
+.social-media-stats .social-box.facebook .link {
+  background-color: #1877f2;
+}
+
+.social-media-stats .social-box.facebook .link:hover {
+  background-color: #1876f2cf;
+
+}
+
+.social-media-stats .social-box.youtube .youtube-icon,
+.social-media-stats .social-box.youtube .link {
+  background-color: #ff0000;
+}
+
+.social-media-stats .social-box.youtube .link:hover {
+  background-color: #ff00008f;
+
+}
+
+.social-media-stats .social-box.linkedin .linkedin-icon,
+.social-media-stats .social-box.linkedin .link {
+  background-color: #0077b5;
+}
+
+.social-media-stats .social-box.linkedin .link:hover {
+  background-color: #0076b5a2;
+
+}
+
+/* End Social Media stats */
