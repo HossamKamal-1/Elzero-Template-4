@@ -128,6 +128,7 @@ aside {
   background-color: var(--aside-color);
   box-shadow: 0 0 10px #ddd;
   position: relative;
+  /* To make it above all elements specially main section*/
 }
 
 @media (min-width: 768px) {
@@ -205,6 +206,7 @@ aside ul li a.active {
 /* Start Top Bar */
 main {
   overflow: hidden;
+  /* To fix grid overflowing out of page*/
 }
 
 .top-bar {
@@ -594,16 +596,6 @@ main {
 
 }
 
-@keyframes change-color {
-  from {
-    background-color: var(--blue-color);
-  }
-
-  to {
-    background-color: white;
-  }
-}
-
 /* End Last Project Progress */
 /* Start Reminders */
 .reminders .reminders-list li>span {
@@ -654,7 +646,6 @@ main {
 
 /* End Latest Post */
 /* Start Social Media stats */
-.social-media-stats {}
 
 .social-media-stats .social-box {
   padding-right: 17px;
@@ -746,3 +737,90 @@ main {
 }
 
 /* End Social Media stats */
+/* Start Projects Table */
+.projects-table .responsive-table {
+  overflow-x: auto;
+}
+
+.projects-table .responsive-table table {
+  border-spacing: 0;
+  min-width: 1229.2px;
+  max-width: 100%;
+}
+
+.projects-table .responsive-table table thead th {
+  background-color: #eee;
+}
+
+.projects-table .responsive-table table thead th,
+.projects-table .responsive-table table tbody td {
+  padding: 10px;
+
+}
+
+.projects-table .responsive-table table tbody tr td {
+  border-left: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+}
+
+.projects-table .responsive-table table tbody tr td:last-child {
+  border-right: 1px solid #eeee;
+}
+
+.projects-table .responsive-table table tbody tr td::selection {
+  background-color: var(--orange-color);
+}
+
+.projects-table .responsive-table table tbody tr td,
+.projects-table .responsive-table table tbody tr {
+  transition: var(--main-transition);
+}
+
+.projects-table .responsive-table table tbody tr:hover {
+  background-color: var(--gray-color);
+
+}
+
+.projects-table .responsive-table table tbody tr td:not(:first-child):hover {
+  background-color: darkslateblue;
+  color: white;
+}
+
+.projects-table .responsive-table table tbody tr td:not(:first-child):hover,
+.projects-table .responsive-table table tbody tr td:not(:first-child):hover+td {
+  border-left: none;
+}
+
+.projects-table .responsive-table table tbody tr td img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: white;
+  transition: var(--main-transition);
+}
+
+.projects-table .responsive-table table tbody tr td img:not(:first-child) {
+  margin-left: -15px;
+}
+
+.projects-table .responsive-table table tbody tr td img:hover {
+  position: relative;
+  padding: 0;
+  background-color: transparent;
+  transform: scale(1.3);
+}
+
+/* End Projects Table */
+/* Start Animation */
+@keyframes change-color {
+  from {
+    background-color: var(--blue-color);
+  }
+
+  to {
+    background-color: white;
+  }
+}
+
+/* End Animation */

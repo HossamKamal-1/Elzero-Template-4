@@ -236,6 +236,12 @@
 .bg-blue {
   background-color: var(--blue-color);
 }
+.bg-green {
+  background-color: var(--green-color);
+}
+.bg-orange {
+  background-color: var(--orange-color);
+}
 
 .bg-eee {
   background-color: var(--eee-color);
