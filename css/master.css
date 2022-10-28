@@ -817,6 +817,7 @@ main {
 .toggle-checkbox {
   -webkit-appearance: none;
   appearance: none;
+  display: none;
 }
 
 .toggle-switch {
@@ -864,10 +865,16 @@ main {
 /* Start Site Control section */
 .site-control .close-message {
   border: 1px solid #ccc;
-  min-height: 120px;
+  min-height: 165px;
 }
 
 /* End site Control section */
+/* Start General Info */
+.general-info .email {
+  margin-right: 10px;
+  width: calc(100% - 71px);
+}
+/* End General Info */
 /* Start Animation */
 @keyframes change-color {
   from {

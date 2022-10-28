@@ -297,7 +297,9 @@
 .fs-12 {
   font-size: 12px;
 }
-
+.fs-13 {
+  font-size: 13px;
+}
 .fs-14 {
   font-size: 14px;
 }
@@ -365,6 +367,12 @@
   border: none;
 }
 
+.b-ccc {
+  border: 1px solid #ccc;
+}
+.bb-eee {
+  border-bottom: 1px solid #eee;
+}
 /* End Border */
 /* Start Media */
 
@@ -388,12 +396,17 @@
   display: inline-flex;
 
 }
-.btn-shape {
+.btn-shape,
+.btn-shape-black {
   padding: 5px 10px;
   border-radius: 6px;
+}
+.btn-shape {
   color: white;
 }
-
+.btn-shape-black {
+  color: black;
+}
 .caret-color-blue:focus {
   caret-color: var(--blue-color);
 }
