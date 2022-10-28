@@ -788,7 +788,7 @@ main {
 
 .projects-table .responsive-table table tbody tr td:not(:first-child):hover,
 .projects-table .responsive-table table tbody tr td:not(:first-child):hover+td {
-  border-left: none;
+  border-left-color: darkslateblue;
 }
 
 .projects-table .responsive-table table tbody tr td img {
@@ -812,6 +812,62 @@ main {
 }
 
 /* End Projects Table */
+/* Start Settings Page */
+
+.toggle-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 78px;
+  height: 32px;
+  background-color: #ccc;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.toggle-switch::before,
+.toggle-switch {
+  transition: var(--main-transition);
+}
+
+.toggle-switch::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00d";
+  font-weight: 900;
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--red-color);
+  top: 4px;
+  left: 4px;
+}
+
+.toggle-checkbox:checked+.toggle-switch {
+  background-color: var(--blue-color);
+}
+
+.toggle-checkbox:checked+.toggle-switch::before {
+  content: "\f00c";
+  left: 50px;
+  color: var(--green-color);
+}
+
+/* End Settings Page */
+/* Start Site Control section */
+.site-control .close-message {
+  border: 1px solid #ccc;
+  min-height: 120px;
+}
+
+/* End site Control section */
 /* Start Animation */
 @keyframes change-color {
   from {
