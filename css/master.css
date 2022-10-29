@@ -874,7 +874,180 @@ main {
   margin-right: 10px;
   width: calc(100% - 71px);
 }
+
+.general-info input[type="email"]:disabled {
+  cursor: no-drop;
+  background-color: #f0f4f8;
+  color: #BBB;
+}
+
 /* End General Info */
+/* Start Social info section */
+.social-info .social-info-box input[type="text"] {
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  border: 1px solid #ddd;
+  border-radius: 0 5px 5px 0;
+}
+
+.social-info .social-info-box .icon {
+  background-color: #f6f6f6;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  transition: var(--main-transition);
+}
+
+.social-info .social-info-box:focus-within .icon {
+  color: black;
+}
+
+/* End Social info section */
+/* Start Widgets Control Section */
+.widgets-control .control-box input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+.widgets-control .control-box input[type="checkbox"]+label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.widgets-control .control-box input[type="checkbox"]+label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  transition: var(--main-transition);
+}
+
+.widgets-control .control-box input[type="checkbox"]+label:hover::before {
+  border-color: var(--blue-alt-color);
+}
+
+.widgets-control .control-box input[type="checkbox"]+label::after {
+  font-family: var(--fa-style-family-classic);
+  font-weight: 900;
+  background-color: var(--blue-alt-color);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 17px;
+  height: 17px;
+  content: "\f00c";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -8.5px;
+  transform: scale(0) rotate(360deg);
+  transition: var(--main-transition);
+}
+
+.widgets-control .control-box input[type="checkbox"]:checked+label::after {
+  transform: scale(1);
+}
+
+/* End Widgets Control Section */
+/* Start Backup Control section */
+.backup-manager .radio-box input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+.backup-manager .radio-box input[type="radio"]+label {
+  position: relative;
+  padding-left: 25px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.backup-manager .radio-box input[type="radio"]+label::before,
+.backup-manager .radio-box input[type="radio"]+label::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+
+}
+
+.backup-manager .radio-box input[type="radio"]+label::before {
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: var(--main-transition);
+}
+
+.backup-manager .radio-box input[type="radio"]+label:hover::before,
+.backup-manager .radio-box input[type="radio"]:checked+label::before {
+  border-color: var(--blue-color);
+}
+
+.backup-manager .radio-box input[type="radio"]+label::after {
+  width: 12px;
+  height: 12px;
+  background-color: var(--blue-color);
+  left: 2.5px;
+  top: 50%;
+  margin-top: -6px;
+  transform: scale(0);
+  transition: var(--main-transition);
+}
+
+.backup-manager .radio-box input[type="radio"]:checked+label::after {
+  transform: scale(1);
+}
+
+.backup-manager .backup-location-box>div input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+.backup-manager .backup-location-box>div>label,
+.backup-manager .backup-location-box>div>label .icon,
+.backup-manager .backup-location-box>div>label span {
+  transition: var(--main-transition);
+}
+
+.backup-manager .backup-location-box>div>label {
+  cursor: pointer;
+  user-select: none;
+
+}
+
+.backup-manager .backup-location-box>div>input[type="radio"]:checked+label {
+  border: 1px solid var(--blue-color);
+}
+
+.backup-manager .backup-location-box>div>input[type="radio"]:checked+label span,
+.backup-manager .backup-location-box>div>input[type="radio"]:checked+label .icon {
+  color: var(--blue-color);
+}
+
+@media (max-width: 767px) {
+  .backup-manager .backup-location-box {
+    flex-wrap: wrap;
+  }
+}
+
+/* End Backup Control section */
 /* Start Animation */
 @keyframes change-color {
   from {

@@ -142,14 +142,14 @@
               <h2 class="mb-5">Security Info</h2>
               <span class="c-gray fs-14">Security Information About Your Account</span>
             </div>
-            <div class="between-flex mb-15 pb-20 bb-eee">
+            <div class="between-flex mb-20 pb-30 bb-eee">
               <div>
                 <span class="mb-5 d-block fw-500">Password</span>
                 <p class="c-gray m-0 fs-13">Last Change On 25/10/2021</p>
               </div>
-              <a href="" class="btn-shape bg-blue">Change</a>
+              <a href="" class="btn-shape bg-blue trans-hov-fx">Change</a>
             </div>
-            <div class="between-flex mb-15 pb-20 bb-eee">
+            <div class="between-flex mb-20 pb-30 bb-eee">
               <div>
                 <span class="mb-5 d-block fw-500">Two-Factor Authentication</span>
                 <p class="c-gray m-0 fs-13">Enable/Disable The Feature</p>
@@ -172,9 +172,95 @@
               <h2 class="mb-5">Social Info</h2>
               <span class="c-gray fs-14">Social Media Information</span>
             </div>
+            <div class="social-info-box mb-20 d-flex align-center">
+              <i class="fa-brands fa-twitter c-gray center-flex icon "></i>
+              <input type="text" placeholder="Twitter Username" class="caret-color-blue " />
+            </div>
+            <div class="social-info-box mb-20 d-flex align-center">
+              <i class="fa-brands fa-facebook-f c-gray center-flex icon "></i>
+              <input type="text" placeholder="Facebook Username" class="caret-color-blue " />
+            </div>
+            <div class="social-info-box mb-20 d-flex align-center">
+              <i class="fa-brands fa-linkedin c-gray center-flex icon"></i>
+              <input type="text" placeholder="Linkedin Username" class="caret-color-blue " />
+            </div>
+            <div class="social-info-box d-flex align-center">
+              <i class="fa-brands fa-youtube c-gray center-flex icon"></i>
+              <input type="text" placeholder="Youtube Username" class="caret-color-blue " />
+            </div>
 
           </div>
-        </div>
+          <div class="widgets-control bg-white p-15 rad-10">
+            <div class="mb-20">
+              <h2 class="mb-5">Widgets Control</h2>
+              <span class="c-gray fs-14">Show/Hide Widgets</span>
+            </div>
+            <div class="control-box mb-20 pl-5">
+              <input type="checkbox" name="" id="one" />
+              <label for="one">Quick Draft</label>
+            </div>
+            <div class="control-box mb-20 pl-5">
+              <input type="checkbox" name="" id="two" checked />
+              <label for="two">Yearly Targets</label>
+            </div>
+            <div class="control-box mb-20 pl-5">
+              <input type="checkbox" name="" id="three" checked />
+              <label for="three">Tickets Statistics</label>
+            </div>
+            <div class="control-box mb-20 pl-5">
+              <input type="checkbox" name="" id="four" checked />
+              <label for="four">Latest News</label>
+            </div>
+            <div class="control-box mb-20 pl-5">
+              <input type="checkbox" name="" id="five" checked />
+              <label for="five">Latest Tasks</label>
+            </div>
+            <div class="control-box pl-5">
+              <input type="checkbox" name="" id="six" />
+              <label for="six">Top Search Items</label>
+            </div>
+          </div>
+          <div class="backup-manager bg-white p-15 rad-10">
+            <div class="mb-20">
+              <h2 class="mb-5">Backup Manager</h2>
+              <span class="c-gray fs-14">Control Backup Time And Location</span>
+            </div>
+            <div class="radio-box mb-15 pl-5">
+              <input type="radio" name="backup-time" id="option1" />
+              <label for="option1" class="fw-500">Daily</label>
+            </div>
+            <div class="radio-box mb-15 pl-5">
+              <input type="radio" name="backup-time" id="option2" checked />
+              <label for="option2" class="fw-500">Weekly</label>
+            </div>
+            <div class="radio-box mb-30 pl-5 pb-20 bb-eee">
+              <input type="radio" name="backup-time" id="option3" />
+              <label for="option3" class="fw-500">Monthly</label>
+            </div>
+            <div class="backup-location-box d-flex align-center txt-c gap-15">
+              <div class="w-full dasq">
+                <input type="radio" name="server-location" id="megaman" />
+                <label class="p-15 b-ccc rad-10 d-block" for="megaman">
+                  <i class="fa-solid fa-server d-block mb-10 icon"></i>
+                  <span class="">Megaman</span>
+                </label>
+              </div>
+              <div class="w-full">
+                <input type="radio" name="server-location" id="zero" checked />
+                <label class="p-15 b-ccc rad-10 d-block" for="zero">
+                  <i class="fa-solid fa-server d-block mb-10 icon"></i>
+                  <span class="">Zero</span>
+                  </lab>
+              </div>
+              <div class="w-full">
+                <input type="radio" name="server-location" id="sigma" />
+                <label class="p-15 b-ccc rad-10 d-block" for="sigma">
+                  <i class="fa-solid fa-server d-block mb-10 icon"></i>
+                  <span class="">Sigma</span>
+                </label>
+              </div>
+            </div>
+          </div>
       </section>
   </div>
   </main>
