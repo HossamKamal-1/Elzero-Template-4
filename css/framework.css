@@ -255,7 +255,9 @@
 .c-black {
   color: black;
 }
-
+.c-orange {
+  color: var(--orange-color);
+}
 .c-white {
   color: var(--aside-color)
 }

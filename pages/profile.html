@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <!-- Render All HTML Elements Normally -->
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <!-- Font Awesome 6.2.0 library -->
+  <link rel="stylesheet" href="../css/all.min.css" />
+  <!-- Custom framework -->
+  <link rel="stylesheet" href="../css/framework.css" />
+  <!-- Main css file -->
+  <link rel="stylesheet" href="../css/master.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="page d-flex">
+    <aside class=" p-10 shrink-0">
+      <h3 class="p-relative txt-c">Elzero</h3>
+      <ul>
+        <li>
+          <a href="../index.html" class="d-flex align-center rad-6 c-black p-8 fs-14">
+            <i class="fa-solid fa-square-poll-vertical fa-fw"></i>
+            <span class="hide-mobile">
+              Dashboard
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="settings.html" class="d-flex align-center rad-6 c-black p-8 fs-14">
+            <i class="fa-solid fa-gear fa-fw"></i>
+            <span class="hide-mobile">
+              Settings
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="active d-flex align-center rad-6 c-black p-8 fs-14">
+            <i class="fa-solid fa-user fa-fw"></i>
+            <span class="hide-mobile">
+              Profile
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="projects.html" class="d-flex align-center rad-6 c-black p-8 fs-14">
+            <i class="fa-solid fa-diagram-project fa-fw"></i>
+            <span class="hide-mobile">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="courses.html" class="d-flex align-center rad-6 c-black p-8 fs-14">
+            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+            <span class="hide-mobile">Courses</span>
+          </a>
+        </li>
+        <li>
+          <a href="friends.html" class="d-flex align-center rad-6 c-black p-8 fs-14">
+            <i class="fa-solid fa-user-group fa-fw"></i>
+            <span class="hide-mobile">Friends</span>
+          </a>
+        </li>
+        <li>
+          <a href="files.html" class="d-flex align-center rad-6 c-black p-8 fs-14">
+            <i class="fa-solid fa-file fa-fw"></i>
+            <span class="hide-mobile">Files</span>
+          </a>
+        </li>
+        <li>
+          <a href="pages/plans.html" class="d-flex align-center rad-6 c-black p-8 fs-14">
+            <i class="fa-solid fa-calendar-check fa-fw"></i>
+            <span class="hide-mobile">Plans</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <main class="grow-1">
+      <div class="top-bar p-10 between-flex">
+        <div class="search p-relative ml-5">
+          <input type="search" name="" id="" class="p-5 rad-6 caret-color-blue" placeholder="Type A Keyword" />
+        </div>
+        <div class="icons d-flex align-center">
+          <span class="notifications p-relative">
+            <i class="fa-regular fa-bell fa-lg"></i>
+          </span>
+          <img src="../images/avatar.png" alt="" class="rad-circle" />
+        </div>
+      </div>
+      <section class="main-content p-10 p-8-mobile">
+        <h1 class="main-title">Profile</h1>
+        <div class="profile-container mt-30 bg-white d-flex align-center rad-10">
+          <div class="avatar-box p-20 txt-c p-8-mobile">
+            <img src="../images/avatar.png" alt="" class="rad-circle" />
+            <h3 class="fs-16 mt-10 mb-10">Osama Elzero</h3>
+            <span class="c-gray fs-14 fw-500">Level 20</span>
+            <div class="progress bg-eee mt-15 rad-6">
+              <span style="width:80%;" class="bg-blue"></span>
+            </div>
+            <div class="stars d-flex justify-center gap-5 mb-15 mt-15">
+              <i class="fa-solid fa-star c-orange fs-12"></i>
+              <i class="fa-solid fa-star c-orange fs-12"></i>
+              <i class="fa-solid fa-star c-orange fs-12"></i>
+              <i class="fa-solid fa-star c-orange fs-12"></i>
+              <i class="fa-solid fa-star c-orange fs-12"></i>
+            </div>
+            <span class="c-gray fs-14">550 Rating</span>
+          </div>
+          <div class="profile-info  grow-1 txt-c-mobile">
+            <div class="info-row d-flex align-center p-15 flex-wrap gap-10">
+              <h4 class="c-gray w-full fw-500">General Information</h4>
+              <div>
+                <span class="c-gray">Full Name:</span>
+                <span>Osama Mohamed</span>
+              </div>
+              <div>
+                <span class="c-gray">Gender:</span>
+                <span>Male</span>
+              </div>
+              <div>
+                <span class="c-gray">Country:</span>
+                <span>Egypt</span>
+              </div>
+              <label>
+                <input type="checkbox" class="toggle-checkbox" checked />
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+            <div class="info-row d-flex align-center p-15 flex-wrap gap-10">
+              <h4 class="c-gray w-full fw-500">Personal Information</h4>
+              <div>
+                <span class="c-gray">Email:</span>
+                <span>o@nn.sa</span>
+              </div>
+              <div>
+                <span class="c-gray">Phone:</span>
+                <span>019123456789</span>
+              </div>
+              <div>
+                <span class="c-gray">Date Of Birth:</span>
+                <span>25/10/1982</span>
+              </div>
+              <label>
+                <input type="checkbox" class="toggle-checkbox" />
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+            <div class="info-row d-flex align-center p-15 flex-wrap gap-10">
+              <h4 class="c-gray w-full fw-500">Job Information</h4>
+              <div>
+                <span class="c-gray">Title:</span>
+                <span>Full Stack Developer</span>
+              </div>
+              <div>
+                <span class="c-gray">Programming Language:</span>
+                <span>Python</span>
+              </div>
+              <div>
+                <span class="c-gray">Years Of Experience:</span>
+                <span>15+</span>
+              </div>
+              <label>
+                <input type="checkbox" class="toggle-checkbox" checked />
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+            <div class="info-row d-flex align-center p-15 flex-wrap gap-10">
+              <h4 class="c-gray w-full fw-500">Billing Information</h4>
+              <div>
+                <span class="c-gray">Payment Method</span>
+                <span>Paypal</span>
+              </div>
+              <div>
+                <span class="c-gray">Email:</span>
+                <span>email@website.com</span>
+              </div>
+              <div>
+                <span class="c-gray">Subscription:</span>
+                <span>Monthly</span>
+              </div>
+              <label>
+                <input type="checkbox" class="toggle-checkbox" />
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="skills-activities-container mt-15 d-flex  gap-15">
+          <div class="skills p-15 bg-white rad-10">
+            <div class="mb-20">
+              <h2 class="mb-5">My Skills</h2>
+              <span class="c-gray">Complete Skills List</span>
+            </div>
+          </div>
+          <div class="last-activities p-15 bg-white rad-10 ">
+            <div class="mb-20">
+              <h2 class="mb-5">Latest Activities</h2>
+              <span class="c-gray">Latest Activities Done By The User</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+  </div>
+</body>
+
+</html>
