@@ -1129,9 +1129,12 @@ main {
   flex-grow: 1.5;
 }
 
-.skills-activities-container .skills .skills-list li span:not(:last-child) {
-  display: inline-flex;
-  margin-right: 5px;
+
+@media (max-width: 767px) {
+  .skills-activities-container .skills .skills-list li {
+    justify-content: center;
+  }
+
 }
 
 .skills-activities-container .skills .skills-list li:not(:last-child) {
@@ -1178,6 +1181,71 @@ main {
 }
 
 /* End profile-page */
+/* Start Projects page */
+.project .project-text p {
+  min-height: 32.5px;
+}
+
+.project .images {
+  margin-top: 35px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .project .images {
+    margin-top: 20px;
+  }
+}
+
+.project .images img {
+  width: 35px;
+  height: 35px;
+  padding: 2px;
+  background-color: white;
+  transition: position var(--main-transition), transform var(--main-transition);
+}
+
+.project .images img:hover {
+  position: relative;
+  padding: 0;
+  transform: scale(1.2);
+}
+
+.project .images img:not(:first-child) {
+  margin-left: -15px;
+}
+
+.project .tags {
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+.project .tags li {
+  justify-content: flex-end;
+}
+
+@media (max-width: 767px) {
+  .project .tags li {
+    justify-content: center;
+  }
+}
+
+.project .progress {
+  height: 6px;
+  width: 48%;
+}
+
+.project .progress span {
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.project .money::first-letter {
+  margin-right: 2px;
+}
+
+/* End Projects page */
 /* Start Animation */
 @keyframes change-color {
   from {
