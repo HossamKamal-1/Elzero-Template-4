@@ -1123,8 +1123,6 @@ main {
   left: 59px;
 }
 
-.skills-activities-container {}
-
 .skills-activities-container .skills {
   flex-grow: 1.5;
 }
@@ -1295,6 +1293,80 @@ main {
 }
 
 /* End Courses Page */
+/* Start Friends Page */
+.friends.main-wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(237px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .friends.main-wrapper {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+}
+
+.friend .contact {
+  top: 8px;
+  left: 5px;
+}
+
+.friend .contact .icon {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.friend .contact .icon:hover {
+  background-color: var(--blue-alt-color);
+  color: white;
+}
+
+.friend .friend-profile img {
+  width: 100px;
+  height: 100px;
+}
+
+.friend .friend-info {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+}
+
+.friend .friend-info .vip-tag {
+  font-weight: bold;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  opacity: 0.27;
+}
+
+.friend .friend-info .friend-stat:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.friend .friend-info .friend-stat .icon {
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+.friend .friend-info .friend-stat .icon+span {
+  font-weight: 400;
+}
+
+.friend .friend-options a {
+  transition: 0.3s;
+}
+
+.friend .friend-options .links a:first-child:hover {
+  background-color: var(--blue-alt-color);
+}
+
+.friend .friend-options .links a:last-child:hover {
+  background-color: #f44336de;
+}
+
+/* End Friends Page */
 /* Start Animation */
 @keyframes change-color {
   from {
