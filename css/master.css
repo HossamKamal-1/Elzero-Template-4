@@ -1220,6 +1220,7 @@ main {
   border-bottom: 1px solid #eee;
   border-top: 1px solid #eee;
 }
+
 .project .tags li {
   justify-content: flex-end;
 }
@@ -1246,6 +1247,54 @@ main {
 }
 
 /* End Projects page */
+/* Start Courses Page */
+.courses.main-wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(237px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .courses.main-wrapper {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+}
+
+.course .image .course-img {
+  max-width: 100%;
+}
+
+.course .image .instructor-img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  left: 10px;
+  top: 10px;
+}
+
+.course .course-text {
+  min-height: 184px;
+}
+
+.course .course-text .title {
+  font-size: 16px;
+}
+
+.course .course-text p {
+  line-height: 1.6;
+  font-size: 14px;
+  min-height: 106px;
+}
+
+.course .course-stat {
+  border-top: 1px solid #eee;
+}
+
+.course .course-stat a {
+  top: -1px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* End Courses Page */
 /* Start Animation */
 @keyframes change-color {
   from {
