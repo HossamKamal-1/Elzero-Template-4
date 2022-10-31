@@ -25,7 +25,12 @@
 .flex-wrap {
   flex-wrap: wrap;
 }
-
+@media (max-width: 767px) {
+  .flex-wrap-mobile {
+    flex-wrap: wrap;
+  }
+  
+}
 .align-center {
   align-items: center;
 }
@@ -69,11 +74,13 @@
 .gap-10 {
   gap: 10px;
 }
+
 @media (max-width: 767px) {
   .gap-10-mobile {
     gap: 10px;
   }
 }
+
 .gap-15 {
   gap: 15px;
 }
