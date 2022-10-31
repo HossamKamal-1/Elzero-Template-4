@@ -1257,7 +1257,7 @@ main {
 }
 
 .course .image .course-img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .course .image .instructor-img {
@@ -1368,29 +1368,93 @@ main {
 
 /* End Friends Page */
 /* Start Files Page */
+
 .files.main-wrapper {
   grid-template-columns: repeat(auto-fill, minmax(183px, 1fr));
 }
 
 
-.grid-flex-container {
-  align-items: flex-start;
-}
-
-.grid-flex-container .upload-file {
-  width: 220px;
-  min-height: 400px;
-}
-
 @media (min-width: 768px) {
+  .grid-flex-container {
+    align-items: flex-start;
+  }
+
   .grid-flex-container .upload-file {
-    width: 250px;
-    margin-top: 30px;
-    
+    min-width: 250px;
   }
 }
 
+@media (max-width: 767px) {
+  .grid-flex-container .upload-file {
+    order: -1;
+  }
+}
+
+
+.upload-file .file-stat .icon {
+  width: 40px;
+  height: 40px;
+}
+
+.upload-file .file-stat .blue {
+  background-color: rgb(0 117 255 / 20%);
+
+
+}
+
+.upload-file .file-stat .green {
+  background-color: rgb(34 197 94 / 20%);
+
+
+}
+
+.upload-file .file-stat .red {
+  background-color: rgb(244 67 54 / 20%);
+
+}
+
+.upload-file .file-stat .orange {
+  background-color: rgb(245 158 11 / 20%);
+
+}
+
+.upload-file .upload {
+  padding: 10px 20px;
+}
+
+.upload-file .upload .icon {
+  animation: up-down infinite 0.8s;
+}
+
+.files .file .download-icon {
+  cursor: pointer;
+  top: 7px;
+  left: 10px;
+  transition: var(--main-transition);
+}
+
+.files .file .download-icon:hover {
+  color: var(--blue-color);
+  text-shadow: 0px 0px 2px black;
+}
+
+.files .file .icon img {
+  width: 80px;
+  height: 80px;
+  transition: var(--main-transition);
+}
+
+.files .file .icon img:hover {
+  transform: rotate(3deg);
+}
+
 /* End Files Page */
+/* Start Plans Page */
+.plans.main-wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+/* End Plans Page */
 /* Start Animation */
 @keyframes change-color {
   from {
@@ -1400,6 +1464,19 @@ main {
   to {
     background-color: white;
   }
+}
+
+@keyframes up-down {
+
+  0%,
+  100% {
+    transform: translateY(2px);
+  }
+
+  50% {
+    transform: translateY(-2px);
+  }
+
 }
 
 /* End Animation */
