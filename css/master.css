@@ -68,6 +68,16 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #0077ff4e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-color);
+  border-radius: 8px;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -704,6 +714,19 @@ main {
 /* Start Projects Table */
 .projects-table .responsive-table {
   overflow-x: auto;
+}
+
+.projects-table .responsive-table::-webkit-scrollbar {
+  height: 12px;
+  background-color: whitesmoke;
+}
+
+.projects-table .responsive-table::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+.projects-table .responsive-table::-webkit-scrollbar-thumb:hover {
+  background-color: purple;
 }
 
 .projects-table .responsive-table table {
