@@ -30,7 +30,6 @@
   .flex-wrap-mobile {
     flex-wrap: wrap;
   }
-
 }
 
 .align-center {
@@ -77,7 +76,6 @@
   .gap-5-mobile {
     gap: 5px;
   }
-
 }
 
 .gap-10 {
@@ -117,7 +115,7 @@
 }
 
 .p-8 {
-  padding: 8px
+  padding: 8px;
 }
 
 .p-10 {
@@ -332,11 +330,11 @@
 }
 
 .c-white {
-  color: var(--aside-color)
+  color: var(--aside-color);
 }
 
 .c-gray {
-  color: var(--gray-color)
+  color: var(--gray-color);
 }
 
 /* End Color */
@@ -374,7 +372,6 @@
     text-align: right;
   }
 }
-
 
 .fs-0 {
   font-size: 0;
@@ -488,7 +485,6 @@
 /* End Border */
 /* Start Media */
 
-
 /* End Media */
 
 /* Start Components */
@@ -507,7 +503,6 @@
 
 .center-flex-inline {
   display: inline-flex;
-
 }
 
 .btn-shape,
