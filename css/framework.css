@@ -213,7 +213,9 @@
 .mt-15 {
   margin-top: 15px;
 }
-
+.mt-16 {
+  margin-top: 16px;
+}
 .mt-25 {
   margin-top: 25px;
 }
@@ -420,6 +422,9 @@
 
 .fs-30 {
   font-size: 30px;
+}
+.fs-40 {
+  font-size: 40px;
 }
 
 .fw-500 {

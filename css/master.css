@@ -1454,6 +1454,85 @@ main {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
+@media (max-width: 767px) {
+  .plans.main-wrapper {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+
+}
+
+.plan .head {
+  border: 3px solid white;
+  outline: 3px solid white;
+}
+
+.plan .head.green {
+  outline-color: var(--green-color);
+}
+
+.plan .head.blue {
+
+  outline-color: var(--blue-color);
+}
+
+.plan .head.orange {
+  outline-color: var(--orange-color);
+
+}
+
+.plan .head h3 {
+  font-size: 23px;
+}
+
+.plan .head .price {
+  font-size: 45px;
+}
+
+.plan .head .price span {
+  font-size: 23px;
+  top: 0;
+  left: -18px;
+}
+
+.plan .features-list {
+  margin-top: 8px;
+}
+
+.plan .features-list li {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.plan .features-list i:first-child {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.plan .features-list li span {
+  flex-grow: 1;
+}
+
+.plan .features-list li i.yes {
+  color: var(--green-color);
+}
+
+.plan .features-list li i.help {
+  color: var(--gray-color);
+  cursor: pointer;
+}
+
+.plan .features-list li i:not(.yes, .help) {
+  color: var(--red-color);
+}
+
+.plan a {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
 /* End Plans Page */
 /* Start Animation */
 @keyframes change-color {
